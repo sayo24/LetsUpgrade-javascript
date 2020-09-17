@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLOYEE DETAILSS</title>
+</head>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+}
+
+h2{
+    text-align: center;
+    margin: 5px;
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+   
+}
+
+th,
+td {
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+.search{
+    margin-top: 20px;
+    margin-left: 38%;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.data{
+    background-color:aquamarine;
+    margin: 5%;
+    padding: 20px;
+    height: 550px;
+}
+</style>
+<body>
+    <div class="data">
+        <h2>Employee Details</h2>
+        <form class="search">
+            <input type="text" placeholder="Search name" id="Searchname" onkeyup="SearchName()"/>
+            <input type="text" placeholder="Search city" id="Searchcity" onkeyup="SearchCity()"/>
+        </form>
+        <table border="1" class="table" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Salary</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="list">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="q1.js"></script>
+</body>
+</html>
